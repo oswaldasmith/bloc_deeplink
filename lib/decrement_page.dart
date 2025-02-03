@@ -1,6 +1,4 @@
-import 'package:bloc_deeplink/decrement_page.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 
 class DecrementPage extends StatefulWidget {
@@ -44,7 +42,6 @@ class _DecrementPageState extends State<DecrementPage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            //ElevatedButton(onPressed: (){context.go('/decrement');}, child: Text('Decrement Page'))
           ],
         ),
       ),

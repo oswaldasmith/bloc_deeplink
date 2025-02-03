@@ -6,7 +6,6 @@ sealed class IncrementEvent {}
 final class Increment extends IncrementEvent {
   @override
   String toString() {
-    // TODO: implement toString
     return 'IncrementEvent {}';
   }
 }

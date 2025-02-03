@@ -19,14 +19,6 @@ class IncrementPage extends StatefulWidget {
 }
 
 class _IncrementPageState extends State<IncrementPage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     var incrementBloc = context.read<IncrementBloc>();
@@ -51,16 +43,10 @@ class _IncrementPageState extends State<IncrementPage> {
                 const Text(
                   'You have pushed the button this many times:',
                 ),
-                //Text(
-                //  //'$_counter',
-                //  widget.startAt,
-                //  style: Theme.of(context).textTheme.headlineMedium,
-                //),
                 Text(
                     incrementBloc.state.counter.toString(),
                   style: Theme.of(context).textTheme.headlineMedium,
                 )
-                //ElevatedButton(onPressed: (){context.go('/decrement');}, child: Text('Decrement Page'))
               ],
             ),
           ),
